@@ -34,7 +34,9 @@ function MainPage() {
     setEmail('');
   }
 
+
   return (
+
     <MainContainer>
       <h2>Formulário de inscrição</h2>
       <Form>
@@ -48,10 +50,11 @@ function MainPage() {
         </label>  
         <label>
           E-mail:
-          <Input placeholder = "E-mail" onChange={inpuEmail} value={email}/>
+          <Input placeholder = "E-mail" onChange={inputEmail} value={email}/>
         </label>  
-      <button>Enviar dados</button>
+      <button onClick={dataPrint} >Enviar dados</button>
       </Form>
+
     </MainContainer>
   )
 }
